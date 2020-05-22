@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [count,setCount] = useState(0);
+
+  const onClick = useCallback(()=>{
+    setCount((count)=>count+1);
+  },[]);
+
   return (
-    <div className="App">
+    <div className="App" onClick={onClick}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -16,7 +22,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React{count}
         </a>
       </header>
     </div>
