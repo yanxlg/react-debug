@@ -1,6 +1,8 @@
-import React, {useCallback, useState} from 'react';
+import * as React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+const {useCallback, useState} = React;
 
 function App() {
   const [count,setCount] = useState(0);
