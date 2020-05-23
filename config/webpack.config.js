@@ -304,6 +304,7 @@ module.exports = function(webpackEnv) {
         'shared': path.resolve(__dirname, '../react/packages/shared'),
         'react-reconciler': path.resolve(__dirname, '../react/packages/react-reconciler'),
         'legacy-events':path.resolve(__dirname, '../react/packages/legacy-events'),
+        'scheduler':path.resolve(__dirname, '../react/packages/scheduler'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
